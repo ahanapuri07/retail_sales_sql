@@ -1,3 +1,17 @@
+-- Create Database
+CREATE TABLE retail_sales(
+    transaction_id INT PRIMARY KEY,
+    sale_date DATE,
+    sale_time TIME,
+    customer_id INT,
+    gender TEXT,
+    age INT,
+    category TEXT,
+    quantity INT,
+    price_per_unit DECIMAL(10,2),
+    cogs DECIMAL(10,2),
+    total_sale DECIMAL(10,2)
+);
 -- How many sales we have? 
 SELECT count(*) AS total_sales FROM retail_sales;
 
